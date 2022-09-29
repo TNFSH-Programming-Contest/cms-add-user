@@ -5,9 +5,9 @@ import subprocess
 parser = argparse.ArgumentParser()
 parser.add_argument('users', help='filename of users list, contains 4 columns: first_name (class), last_name (real name), username, plaintext password')
 parser.add_argument('-c', '--contest', dest='contests', action='append')
-parser.add_argument('--dry-run', action='store_true', help="Don't run any commands, but display them")
-parser.add_argument('--no-user', action='store_true', help="Don't run cmsAddUser")
-parser.add_argument('--no-participation', action='store_true', help="Don't run cmsAddParticipation")
+parser.add_argument('--dry-run', action='store_true', help="don't run any commands, but display them")
+parser.add_argument('--no-user', action='store_true', help="don't run cmsAddUser")
+parser.add_argument('--no-participation', action='store_true', help="don't run cmsAddParticipation")
 parser.set_defaults(
     contests=[],
 )
